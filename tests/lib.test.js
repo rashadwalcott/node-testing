@@ -24,3 +24,12 @@ describe('greet', () => {
     expect(result).toContain('Rashad');
   });
 });
+
+describe('getCurrencies', () => {
+  it('should return supported currencies', () => {
+    const result = lib.getCurrencies();
+    expect(result).toEqual(expect.arrayContaining(['USD', 'AUD', 'EUR']));
+
+    expect(result).toContain('USD', 'AUD', 'EUR');
+  });
+});

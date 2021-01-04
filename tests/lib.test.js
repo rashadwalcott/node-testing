@@ -1,4 +1,5 @@
 const lib = require('../lib');
+const fizz = require('../exercise1');
 
 describe('absolute', () => {
   it(' should return a positive number if input is positive', () => {
